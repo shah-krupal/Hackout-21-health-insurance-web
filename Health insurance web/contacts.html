@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles-conatct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="Header">
+        <div class="Header-img">
+            <img src="./images/Company-logo-full.png" alt="logo" id="company-logo">
+        </div>
+    </div>
+    <div class="below-Header">
+        <!-- just image -->
+    </div>
+
+    <div class="Content-Header">
+        <div class="Menu">
+            <a href="#home" class="active">SHREE NARAYAN ENERGY</a>
+            <div id="myLinks">
+                <a href="index.html" class="content" style="order:2" onclick="myFunction()">Home</a>
+                <a href="about.html" class="content" style="order:3" onclick="myFunction()">About Us</a>
+                <a href="projects.html" class="content" style="order:4" onclick="myFunction()">Projects</a>
+                <a href="#Products" class="content" style="order:5" onclick="myFunction()">Products</a>
+                <a href="contacts.html" class="content" style="order:6" onclick="myFunction()">Contact Us</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="Page">
+                <h1 id="tab">Contact Us</h1>
+            </div>
+            <div class="Person">
+                <div class="Person-1">
+                    <div class="CAP-photo">
+                        <img src="./images/CAP photo.jpeg" alt="Chirag Patel" id="CAP-img">
+                    </div>
+                    <div class="CAP-details">
+                        <h1 class="item">KS | DVS | HCP</h1>
+                        <p class="item">
+                            <i class="fa" style="color: rgb(255, 148, 8);">&#xf095;</i> +91 99999 99999
+                        </p>
+                        <p class="item"><i class="fa fa-envelope" style="color: rgb(255, 148, 8);"></i> E-mail-
+                            dhkinsurance@gmail.com</p>
+                        <address class="item">
+                            <i class="fa" style="color: rgb(255, 148, 8);">&#xf041;</i>
+                            Opp. Dr. S.R. Shah's Hospital,<br>
+                            Near Punjab Bakery,<br> Santram Road,
+                            Nadiad-387001 <br>Dist. Kheda, Gujarat
+                        </address>
+                    </div>
+        
+                </div>
+                <!-- <div class="Person-2">
+                        <img src="#" alt="Viral Patel">
+                        <h2>Viral Patel</h2>
+                        <p>
+                            <i class="fa" style="color: rgb(255, 148, 8);">&#xf095;</i> +91 98240 23490
+                        </p>
+                    </div> -->
+            </div>
+            <!-- fill -->
+        </div>
+    </div>
+    <!-- Content div here -->
+    
+    <!-- Footer div here -->
+    <div class="footer">
+
+        <div class="footer-flex">
+            <p> Contact Us:
+            <ul id="mobile-number">
+                <li><i class="fa" style="color: rgb(255, 148, 8);">&#xf095;</i> +91 99999 99999</li>
+                <li><i class="fa" style="color: rgb(255, 148, 8);">&#xf095;</i> +91 00000 00000</li>
+            </ul>
+            </p>
+        </div>
+        <div class="footer-flex">
+            <p><i class="fa fa-envelope" style="color: rgb(255, 148, 8);"></i> E-mail- dhkinsurance@gmail.com</p>
+        </div>
+
+        <div class="footer-flex">
+            <p>Address:</p>
+            <address>
+                <i class="fa" style="color: rgb(255, 148, 8);">&#xf041;</i>
+                Opp. Dr. S.R. Shah's Hospital,<br>
+                Near Punjab Bakery, Santram Road,<br>
+                Nadiad-387001 Dist. Kheda, Gujarat
+            </address>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = window.matchMedia("(max-width: 767px)");
+            if (x.matches) {
+                var x = document.getElementById("myLinks");
+                // var y = document.getElementsByClassName("Content-Header");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+
+                } else {
+                    x.style.display = "block";
+                    // x.style.height = "100%";
+                    // x.style.minWidth = "4rem";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

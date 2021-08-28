@@ -1,0 +1,468 @@
+/* Mobile phones */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+/* MOBILE PHONE DISPLAY */
+@media only screen and (max-width: 767px) {
+  /**767px**/
+  .Header {
+    min-height: 1rem;
+    max-height: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Header-img {
+    margin: auto 0px;
+    flex-grow: 0;
+    flex-shrink: 2;
+    display: block;
+  }
+  #company-logo {
+    height: 15vh;
+    display: block;
+    margin: auto;
+  }
+
+  .below-Header {
+    width: 100%;
+    height: 50px;
+    background-color:brown;
+    background-position-x: top;
+    background-size: cover;
+  }
+
+  .Content-Header {
+    width: 100%;
+    min-height: 3rem;
+    background-color: aliceblue;
+    overflow: hidden;
+  }
+
+  .Content-Header a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .Content-Header > .Menu > #myLinks > a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: black; /**change color**/
+    color: white;
+  }
+
+  .Content-Header #myLinks {
+    display: none;
+  }
+  .Content-Header a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .Content-Header > .Menu > a.icon:hover {
+    background: crimson;
+  }
+
+  /* Styling links */
+  .content {
+    background-color: #7785ac;
+    color: white;
+    padding: 10px;
+    /* margin: 10px; */
+    border-bottom: 0.1px solid black;
+    font-size: 20px;
+  }
+
+  .container {
+    width: 100%;
+    min-height: 30rem;
+    padding-bottom: 30px;
+    background-color: #f1f4ffff;
+    /* MINT: #adefd1ff*/
+    display: flex;
+  }
+  .main {
+    width: 90%;
+    min-height: 30rem;
+    background: white;
+    margin: 30px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .Page {
+    width: 100%;
+    background-color: #003300;
+    color: white;
+    min-height: 3rem;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .about-us {
+    width: 90%;
+    min-height: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 20px 5%;
+  }
+  .about-us-txt {
+    width: 90%;
+    min-height: 4rem;
+    /* border: 2px solid black; */
+    padding: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .sum-up {
+    width: 90%;
+    background-color: #ffa500;
+    display: flex;
+    flex-direction: column;
+    min-height: 5rem;
+  }
+  .entry {
+    margin: 30px;
+    color: #040720;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .footer {
+    width: 100%;
+    background: black;
+    color: whitesmoke; /* wheat */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  .footer-flex {
+    font-size: 1rem;
+    padding: 15px;
+  }
+  #mobile-number {
+    list-style-type: none;
+  }
+}
+
+/* TABLET DISPLAY */
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  /**767px**/
+  .Header {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(./images/Bring\ Change.jpg);
+    background-position-x: top;
+    background-size: cover;
+    /* background-attachment: fixed; */
+  }
+  .Header-img {
+    margin: auto 0px;
+    /* position: fixed; */
+  }
+
+  #company-logo {
+    height: 15vh;
+    overflow-x: hidden;
+    padding: 5px;
+    display: block;
+    margin: auto;
+  }
+
+  .below-Header {
+    display: none;
+  }
+
+  .Content-Header > .Menu {
+    width: 100%;
+    min-height: 47px;
+    background-color: black;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: left;
+  }
+
+  .Content-Header > .Menu > #myLinks > a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    /* display: inline block; */
+  }
+
+  .Content-Header > .Menu > #myLinks > a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    display: none;
+  }
+
+  .Content-Header #myLinks {
+    display: block;
+    margin: auto;
+    margin-left: 10px;
+  }
+  .Content-Header a.icon {
+    display: none;
+  }
+
+  /* Styling links */
+  .content {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0px 10px;
+    font-size: 20px;
+  }
+
+  .container {
+    width: 100%;
+    min-height: 30rem;
+    padding-bottom: 30px;
+    background-color: #f1f4ffff;
+    /* MINT: #adefd1ff*/
+    display: flex;
+  }
+  .main {
+    width: 90%;
+    min-height: 30rem;
+    background: white;
+    margin: 30px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .Page {
+    width: 100%;
+    background-color: #003300;
+    color: white;
+    min-height: 3rem;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .about-us {
+    width: 90%;
+    min-height: 3rem;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 5%;
+  }
+  .about-us-txt {
+    width: 62%;
+    min-height: 4rem;
+    /* border: 2px solid black; */
+    padding: 10px;
+    margin-right: 4%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .sum-up {
+    width: 34%;
+    background-color: #ffa500;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .entry {
+    margin: 30px;
+    color: #040720;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .footer {
+    width: 100%;
+    background: black;
+    color: whitesmoke; /* wheat */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 25px;
+  }
+  .footer-flex {
+    font-size: 1rem;
+    padding: 15px;
+  }
+  #mobile-number {
+    list-style-type: none;
+  }
+}
+
+/* LAPTOP DISPLAY */
+@media only screen and (min-width: 1024px) {
+  /**416**/
+  .Header {
+    width: 50vw ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(images\Company-logo-full.png);
+    background-position-y:top;
+
+    background-size: cover;
+    /* background-attachment: fixed; */
+  }
+  .Header-img {
+    margin: auto ;
+    width: 100% ;
+    text-align: center;
+    /* position: fixed; */
+  }
+
+  #company-logo {
+    height: 20vh;
+    width: 40vw;
+    overflow-x: hidden;
+    padding: 5px;
+    display: block;
+    margin: auto;
+  }
+
+  .below-Header {
+    display: none;
+  }
+
+  .Content-Header > .Menu {
+    width: 100%;
+    min-height: 47px;
+    background-color: #040720;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: left;
+  }
+
+  .Content-Header > .Menu > #myLinks > a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    /* display: inline block; */
+  }
+
+  .Content-Header > .Menu > #myLinks > a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    display: none;
+    background-color: rgb(71, 70, 70);
+  }
+
+  .Content-Header #myLinks {
+    display: block;
+    margin: auto;
+    margin-left: 10px;
+  }
+  .Content-Header a.icon {
+    display: none;
+  }
+
+  /* Styling links */
+  .content {
+    background-color: #040720;
+    color: white;
+    padding: 10px;
+    margin: 0px 10px;
+    font-size: 20px;
+  }
+
+  .container {
+    width: 100%;
+    min-height: 30rem;
+    padding-bottom: 30px;
+    background-color: #f1f4ffff;
+    /* MINT: #adefd1ff*/
+    display: flex;
+  }
+  .main {
+    width: 90%;
+    min-height: 30rem;
+    background: white;
+    margin: 30px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .Page {
+    width: 100%;
+    background-color: #003300;
+    color: white;
+    min-height: 3rem;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .about-us {
+    width: 90%;
+    min-height: 3rem;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 5%;
+  }
+  .about-us-txt {
+    width: 62%;
+    min-height: 4rem;
+    /* border: 2px solid black; */
+    padding: 10px;
+    margin-right: 4%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+  }
+  .sum-up {
+    width: 34%;
+    background-color: #ffa500;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 1s;
+  }
+  .sum-up:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.31), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  }
+  .entry {
+    margin: 30px;
+    color: #040720;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .footer {
+    width: 100%;
+    background: black;
+    color: whitesmoke; /* wheat */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 25px;
+  }
+  .footer-flex {
+    font-size: 1rem;
+    padding: 15px;
+  }
+  #mobile-number {
+    list-style-type: none;
+  }
+}

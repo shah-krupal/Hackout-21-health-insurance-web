@@ -1,0 +1,332 @@
+/* Mobile phones */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+/* MOBILE PHONE DISPLAY */
+@media only screen and (max-width: 767px) {
+  /**767px**/
+  .Header {
+    min-height: 1rem;
+    max-height: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Header-img {
+    margin: auto 0px;
+    flex-grow: 0;
+    flex-shrink: 2;
+    display: block;
+  }
+  #company-logo {
+    height: auto;
+    width: 100%;
+    display: block;
+  }
+
+  .below-Header {
+    width: 100%;
+    height: 50px;
+    background-image: url(./images/Bring\ Change.png);
+    background-position-x: center;
+    background-size: cover;
+  }
+
+  .Content-Header {
+    width: 100%;
+    min-height: 3rem;
+    background-color: aliceblue;
+    overflow: hidden;
+  }
+
+  .Content-Header a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .Content-Header > .Menu > #myLinks > a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: black; /**change color**/
+    color: white;
+  }
+
+  .Content-Header #myLinks {
+    display: none;
+  }
+  .Content-Header a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .Content-Header > .Menu > a.icon:hover {
+    background: crimson;
+  }
+
+  /* Styling links */
+  .content {
+    background-color: #7785ac;
+    color: white;
+    padding: 10px;
+    /* margin: 10px; */
+    border-bottom: 0.1px solid black;
+    font-size: 20px;
+  }
+
+  .main {
+    width: 100%;
+    min-height: 20rem;
+    background: white;
+  }
+
+  .footer {
+    width: 100%;
+    background: black;
+    color: whitesmoke; /* wheat */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  .footer-flex {
+    font-size: 1rem;
+    padding: 15px;
+  }
+  #mobile-number {
+    list-style-type: none;
+  }
+}
+
+/* TABLET DISPLAY */
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  /**767px**/
+  .Header {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(./images/Bring\ Change.png);
+    background-position-x: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+  }
+  .Header-img {
+    margin: auto 0px;
+    /* position: fixed; */
+  }
+
+  #company-logo {
+    height: 150px;
+    overflow-x: hidden;
+    padding: 5px;
+    display: block;
+  }
+
+  .below-Header {
+    display: none;
+  }
+
+  .Content-Header > .Menu {
+    width: 100%;
+    min-height: 47px;
+    background-color: black;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: left;
+  }
+
+  .Content-Header > .Menu > #myLinks > a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    /* display: inline block; */
+  }
+
+  .Content-Header > .Menu > #myLinks > a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    display: none;
+  }
+
+  .Content-Header #myLinks {
+    display: block;
+    margin: auto;
+    margin-left: 10px;
+  }
+  .Content-Header a.icon {
+    display: none;
+  }
+
+  /* Styling links */
+  .content {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0px 10px;
+    font-size: 20px;
+  }
+
+  .main {
+    width: 100%;
+    min-height: 20rem;
+    background: white;
+  }
+
+  .footer {
+    width: 100%;
+    background: black;
+    color: whitesmoke; /* wheat */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 25px;
+  }
+  .footer-flex {
+    font-size: 1rem;
+    padding: 15px;
+  }
+  #mobile-number {
+    list-style-type: none;
+  }
+}
+
+/* LAPTOP DISPLAY */
+@media only screen and (min-width: 1024px) {
+  /**416**/
+  .Header {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(./images/Bring\ Change.png);
+    background-position-x: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+  }
+  .Header-img {
+    margin: auto 0px;
+    /* position: fixed; */
+  }
+
+  #company-logo {
+    height: 150px;
+    overflow-x: hidden;
+    padding: 5px;
+    display: block;
+  }
+
+  .below-Header {
+    display: none;
+  }
+
+  .Content-Header > .Menu {
+    width: 100%;
+    min-height: 47px;
+    background-color: #040720;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: left;
+  }
+
+  .Content-Header > .Menu > #myLinks > a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    /* display: inline block; */
+  }
+
+  .Content-Header > .Menu > #myLinks > a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    display: none;
+  }
+
+  .Content-Header #myLinks {
+    display: block;
+    margin: auto;
+    margin-left: 10px;
+  }
+  .Content-Header a.icon {
+    display: none;
+  }
+
+  /* Styling links */
+  .content {
+    background-color: #040720;
+    color: white;
+    padding: 10px;
+    margin: 0px 10px;
+    font-size: 20px;
+  }
+
+  .container {
+    width: 100%;
+    min-height: 30rem;
+    padding-bottom: 30px;
+    background-color: #f1f4ffff;
+    /* MINT: #adefd1ff*/
+    display: flex;
+  }
+  .main {
+    width: 90%;
+    min-height: 30rem;
+    background: white;
+    margin: 30px auto;
+    border: 1px solid black;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .Page {
+    width: 100%;
+    background-color: #003300;
+    color: white;
+    min-height: 3rem;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .footer {
+    width: 100%;
+    background: black;
+    color: whitesmoke; /* wheat */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 25px;
+  }
+  .footer-flex {
+    font-size: 1rem;
+    padding: 15px;
+  }
+  #mobile-number {
+    list-style-type: none;
+  }
+}
+
+#list
+{
+  padding: 1.5vw;
+  font-size: 3vh;
+}
