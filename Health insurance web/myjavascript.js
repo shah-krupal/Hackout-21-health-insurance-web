@@ -1,38 +1,25 @@
- 
 // Reading our test file
 
-var healthIndex ;
-const data = [BMI = 22.5, calorie = 550, cal = 2200, sleep = 6.45, h_point = 150, net = 2200, BP = 0, Cholestrol = 0,  cardiac = 0]
-function calc()
+/* 
+*  A function to get input from excel sheet will be created here. This will return an array of data for a particular id customer 
+*  We are taking an example by hardcoding that expected array.
+*  This is a prototype working for age 18-30 ratings. Same functionality can be extended for other sectors and formulae
+ */
+
+function calc()           // funtion to get the id number of user by alert prompt 
 {
     var id = window. prompt("Enter your id: "); 
     calculator(id) ;
 }
-
-/*let btn = document.createElement("button");
-btn.innerHTML = "Login";
-btn.type = "submit";
-btn.name = "formBtn";
-document.body.appendChild(btn);
-btn.onclick(myFunction()) ;*/
+var healthIndex ;
+/* ---------Following line of data will be imported from Excel file or database file-----------------*/
+const data = [BMI = 22.5, calorie = 550, cal = 2200, sleep = 6.45, h_point = 150, net = 2200, BP = 0, Cholestrol = 0,  cardiac = 0]
 
 calc() ;
 
+/*-----------------------------------------For 18-30 age---------------------------------------------*/
 
-/* 
-A function to get input from excel sheet will be created here. This will return an array of data for a particular id customer 
-We are taking an example by hardcoding that expected array */
-
-
-
-
-
-// For 18-30 age--------------------------------------------------------------------------------
-
-/* ---------This line of data will be imported from Excel file or database file-----------------*/
-
-
-function calculator (data)
+function calculator (data)        // Function to calculate health score
 {
 
     let BMIPoint = 100 - Math.abs((BMI - 23) *100 / 23) ;             // example: for BMI = 35 BMIPoint = 47.82 
