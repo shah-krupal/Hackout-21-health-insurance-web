@@ -11,28 +11,30 @@
   /**767px**/
   .Header {
     min-height: 1rem;
-    max-height: 180px;
+    max-height: 25vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-image: url(images/Company-logo-full.png);
   }
   .Header-img {
-    margin: auto 0px;
+    margin: auto;
     flex-grow: 0;
     flex-shrink: 2;
     display: block;
+    align-items: center;
   }
   #company-logo {
-    height: auto;
-    width: 100%;
+    height: 20vh;
     display: block;
+    margin: auto;
   }
 
   .below-Header {
     width: 100%;
     height: 50px;
-    background-image: url(./images/Bring\ Change.png);
+    background-image: url(images/Company-logo-full.png);
     background-position-x: center;
     background-size: cover;
   }
@@ -46,7 +48,7 @@
 
   .Content-Header a {
     color: white;
-    padding: 14px 16px;
+    padding: 13px 14px;
     text-decoration: none;
     font-size: 17px;
     display: block;
@@ -88,10 +90,104 @@
   }
 
   .main {
-    width: 100%;
-    min-height: 20rem;
+    width: 95% ;
+    height: 200vh;
     background: white;
+    margin: 8vh auto;
+    border: 1px solid black;
+    background-color: rgb(214, 216, 73);
+    justify-content: center;
+    box-shadow: khaki 15px 15px;
   }
+
+
+
+  .main h1
+  {
+    padding: 17px;
+    font-weight: bolder;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6.5vh;
+  }
+
+  .main p 
+  {
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 5vh;
+  }
+
+  .main h2
+  {
+    text-align: center;
+    font-weight: bold;
+    margin: 7px;
+    font-style: italic;
+    font-family: monospace;
+    font-size: 4vh;
+    color: rgb(141, 39, 39);
+  }
+  #demo
+  {
+    display: block;
+    float: right;
+    margin-right: 2vw;
+    margin-top: 6vh;
+    width: 60vh;
+    height:10vh;
+    border-radius: 8px;
+    border-color: rgb(19, 128, 19);
+    background-color: lightgreen;
+    font-family: cursive;
+    font-size: 3vh;
+    font-weight: bolder;
+  }
+
+  #no
+  {
+    display: block;
+    float: right ;
+    font-size: 4vh;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    margin-bottom: 4vh;
+  }
+
+  #graph
+  {
+    width: 90%;
+    margin-left: 4vh;
+    margin-top: 5vh;
+    float: left;
+  }
+
+  #text
+  {
+    display: block;
+    float: right;
+    font-size: 3.5vh;
+    padding-left: 0 px;
+    margin-left: 0 px;
+    padding-top: 4vh;
+
+  }
+  
+  #invisible
+  {
+    display: none;
+    width: 40vw;
+    height: 12vh;
+    border-color: blue;
+    border: blue 3px solid ;
+    background-color: coral;
+    color: cyan;
+    font-family: cursive;
+    font-size: 4vh;
+  }
+
 
   .footer {
     width: 100%;
@@ -115,34 +211,40 @@
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
   /**767px**/
   .Header {
-    height: 200px;
+    height: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-image: url(./images/Bring\ Change.png);
+    background-image: url(images/Company-logo-full.png);
     background-position-x: center;
     background-size: cover;
     /* background-attachment: fixed; */
   }
   .Header-img {
-    margin: auto 0px;
-    /* position: fixed; */
+    margin: auto;
+    flex-grow: 0;
+    flex-shrink: 2;
+    display: block;
+    align-items: center;
   }
 
   #company-logo {
-    height: 150px;
-    overflow-x: hidden;
-    padding: 5px;
+    height: 20vh;
     display: block;
+    margin: auto;
   }
 
   .below-Header {
-    display: none;
+    width: 100%;
+    height: 50px;
+    background-image: url(images/Company-logo-full.png);
+    background-position-x: center;
+    background-size: cover;
   }
 
   .Content-Header > .Menu {
     width: 100%;
-    min-height: 47px;
+    min-height: 8vh;
     background-color: black;
     /* overflow: hidden; */
     display: flex;
@@ -151,7 +253,7 @@
 
   .Content-Header > .Menu > #myLinks > a {
     color: white;
-    padding: 14px 16px;
+    padding: 13px 14px;
     text-decoration: none;
     font-size: 17px;
     /* display: inline block; */
@@ -163,7 +265,8 @@
   }
 
   .active {
-    display: none;
+    background-color: black; /**change color**/
+    color: white;
   }
 
   .Content-Header #myLinks {
@@ -172,23 +275,120 @@
     margin-left: 10px;
   }
   .Content-Header a.icon {
-    display: none;
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   /* Styling links */
   .content {
-    background-color: black;
+    background-color: #7785ac;
     color: white;
     padding: 10px;
-    margin: 0px 10px;
+    /* margin: 10px; */
+    border-bottom: 0.1px solid black;
     font-size: 20px;
   }
 
   .main {
-    width: 100%;
-    min-height: 20rem;
+    width: 95% ;
+    height: 200vh;
     background: white;
+    margin: 8vh auto;
+    border: 1px solid black;
+    background-color: rgb(214, 216, 73);
+    justify-content: center;
+    box-shadow: khaki 15px 15px;
   }
+
+  .main h1
+  {
+    padding: 17px;
+    font-weight: bolder;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6.5vh;
+  }
+
+  .main p 
+  {
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 5vh;
+  }
+
+  .main h2
+  {
+    text-align: center;
+    font-weight: bold;
+    margin: 7px;
+    font-style: italic;
+    font-family: monospace;
+    font-size: 4vh;
+    color: rgb(141, 39, 39);
+  }
+  #demo
+  {
+    display: block;
+    float: right;
+    margin-right: 2vw;
+    margin-top: 6vh;
+    width: 60vh;
+    height:10vh;
+    border-radius: 8px;
+    border-color: rgb(19, 128, 19);
+    background-color: lightgreen;
+    font-family: cursive;
+    font-size: 3vh;
+    font-weight: bolder;
+  }
+
+  #no
+  {
+    display: block;
+    float: right ;
+    font-size: 4vh;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    margin-bottom: 4vh;
+  }
+
+  #graph
+  {
+    width: 90%;
+    margin-left: 4vh;
+    margin-top: 5vh;
+    float: left;
+  }
+
+  #text
+  {
+    display: block;
+    float: right;
+    font-size: 3.5vh;
+    padding-left: 0 px;
+    margin-left: 0 px;
+    padding-top: 4vh;
+
+  }
+  
+  #invisible
+  {
+    display: none;
+    width: 40vw;
+    height: 12vh;
+    border-color: blue;
+    border: blue 3px solid ;
+    background-color: coral;
+    color: cyan;
+    font-family: cursive;
+    font-size: 4vh;
+  }
+
 
   .footer {
     width: 100%;
